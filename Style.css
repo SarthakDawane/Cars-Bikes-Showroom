@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/* -----NAVBAR----- */
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: #999;
+}
+
+nav .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 3vw;
+}
+
+nav .container h1{
+    font-size: 2vw;
+}
+nav .container h1 span{
+    color: deeppink;
+    font-size: 4vw;
+}
+
+nav .container .items{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    margin-right: 5vw;
+}
+nav .container .items a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5vw;
+    transition: 0.3s;
+}
+nav .container .items a:hover{
+    text-decoration-line: overline underline;
+    color: orangered;
+}
+
+
+/* -----HOME----- */
+header{
+    height: 70vh;
+    width: 100vw;
+}
+
+.head-container{
+    text-align: center;
+}
+.head-container h2{    
+    padding: 3vh 2vw;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.head-container h2:hover{
+    color: salmon;
+    cursor : pointer;
+}
+
+/* -----section----- */
+
+.bikecar{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+}
+
+.bikecar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.bikecar img:hover{
+    transform: scale(1.3);
+}
+
+.car{
+    width: 50%;
+    height: 50vh;
+    margin: 0 25px;
+    overflow: hidden;
+}
+
+.bike{
+    width: 50%;
+    height: 50vh;
+    margin: 0 25px;
+    overflow: hidden;
+}
+
+#qsection h3{
+    font-weight: 400;
+    font-size: 3vw;
+    text-align: center;
+    padding: 2px; 
+    margin: 20px 0;   
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#qsection{
+    height: 90vh;
+    /* background-color: yellow; */
+    width: 100%;
+}
+#qsection h3:hover{
+    color: salmon;
+    cursor : pointer;
+}
+
+.query{
+    margin: 10px 15px;
+    text-align: center;
+    font-size: 3rem;
+    color: red;
+}
+.answer{
+    margin: 10px 15px;
+    font-size: 2rem;
+    color: cornflowerblue;
+    text-align: justify;
+}
+
+/* -----carsec----- */
+.car-sec{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.carbike{
+    width: 100%;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 600;
+    margin: 10px;
+    text-decoration: underline;
+    color: blue;
+    font-style: italic;
+    transition: 0.6s ease-in;
+}
+.carbike:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    color: red;
+}
+
+
+.car-des{
+    width: 32%;
+    height: 49%;
+    border-radius: 20px;
+    padding: 10px;
+    overflow: hidden;
+    margin: 10px;
+    background: #777;
+    color: #fff;
+    text-align: center;    
+    transition: 0.6s ease-in-out;
+}
+.car-des:hover{
+    border: 5px solid blue;
+}
+
+.car-des img{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    transition: 0.6s ease-in-out;
+}
+
+.car-des img:hover{
+    transform: translateY(-5px);
+    border: 2px solid red;
+}
+
+.car-des h3{
+    font-size: 25px;
+    margin: 5px;
+    transition: 0.5s ;
+}
+.car-des h3:Hover ,p:hover{
+    color: magenta;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* -----bike section---- */
+.bike-sec{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bike-des{
+    width: 32%;
+    height: 49%;
+    border-radius: 20px;
+    padding: 10px;
+    overflow: hidden;
+    margin: 10px;
+    background: #888;
+    color: #fff;
+    text-align: center;    
+    transition: 0.6s ease-in-out;
+}
+.bike-des:hover{
+    border: 5px solid blue;
+}
+
+.bike-des img{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    transition: 0.6s ease-in-out;
+}
+
+.bike-des img:hover{
+    transform: translateY(-5px);
+    border: 2px solid red;
+}
+
+.bike-des h3{
+    font-size: 25px;
+    margin: 5px;
+    transition: 0.5s ;
+}
+.bike-des h3:Hover ,p:hover{
+    color: magenta;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width:870px) {
+    nav{
+        height: 30px;
+    }
+    nav .container{
+        display: flex;
+        align-items: center;
+    }
+    nav .container h1{
+        font-size: 3vw;
+    }
+    nav .container h1 span{
+        color: deeppink;
+        font-size: 5vw;
+    }
+    nav .container .items a{
+        text-decoration: none;
+        color: #000;
+        font-size: 2.5vw;
+        transition: 0.3s;
+    }
+    header{
+        height: 75vh;
+    }
+
+    .bikecar{
+        height: 60vh;
+        width: 100%;
+        flex-direction: column;
+    }
+    .car , .bike{
+        width: 90%;
+        height: 30vh;
+        margin: 20px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    #qsection{
+        height: 60vh;
+    }
+    #qsection h3{
+            font-size: 6vw;
+    }
+
+    .query{
+        margin: 10px 15px;
+        font-size: 1.7rem;
+    }
+    .answer{
+        margin: 5px 15px;
+        font-size: 1rem;
+    }
+
+    /* -----car section----- */
+    .car-sec{
+        height: auto;
+    }
+    .carbike{
+        font-size: 4vh;
+    }   
+    
+
+    .car-des{
+        width: 95%;
+        height: 40%;
+        margin: 10px auto;
+    }
+
+    /* -----bike section ----- */ 
+    
+    .bike-sec{
+        height: auto;
+    }
+    .bike-des{
+        width: 95%;
+        height: 40%;
+        margin: 10px auto;
+    }
+}
