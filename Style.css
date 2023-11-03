@@ -132,7 +132,7 @@ header{
 /* -----carsec----- */
 .car-sec{
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -158,7 +158,7 @@ header{
 
 .car-des{
     width: 32%;
-    height: 49%;
+    height: 23%;
     border-radius: 20px;
     padding: 10px;
     overflow: hidden;
